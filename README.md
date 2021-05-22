@@ -22,7 +22,7 @@ Directories:  813
 Size:         1.227.079.350 bytes
 ```
 
-|Contenders    | Programming Language|  Size bytes Linux |  Size Bytes Win10 | Repo|
+|Contenders    | Programming Language|  Size Bytes Linux |  Size Bytes Win10 | Repo|
 |----------    | -------------------|  -----------------:| ---------------:|-----|
 |du/du64.exe   |  C/C++             |  105.640          |     465.784       | Linux: internal /usr/bin/du, Windows: https://docs.microsoft.com/en-us/sysinternals/downloads/du|
 |rdu-async-par |  Rust				|1.243.632			|	1.126.400    	| https://github.com/artempyanykh/rdu|
@@ -36,7 +36,7 @@ Size:         1.227.079.350 bytes
 * x86-64 Platform: amd64<br> 
 * Rust version: 1.52<br>
 * Go version: go1.16.3<br>
-* .Net 5.0 (C# code compiled to native binary using experimental .net native AOT compiler at https://github.com/dotnet/runtimelab/tree/feature/NativeAOT/samples/HelloWorld
+* .Net 5.0 C# code compiled to native binary using experimental .net native AOT compiler at https://github.com/dotnet/runtimelab/tree/feature/NativeAOT/samples/HelloWorld
  
 ### Linux Debian 9 (WSL2):
 ```bash
