@@ -39,9 +39,10 @@ Size:         1.227.079.350 bytes
 * .Net 5.0 (C# code compiled to native binary using experimental .net native AOT compiler at https://github.com/dotnet/runtimelab/tree/feature/NativeAOT/samples/HelloWorld
  
 ### Linux Debian 9 (WSL2):
-```
+```bash
 ~$ hyperfine -L exe 'du -hs',./rdu-async-par,'./du-rs -p 64 -t 64','./du-cs 64',./du-go,'./diskus --threads 64' '{exe} /mnt/r/test'
 Benchmark #1: du -hs /mnt/r/test
+
   Time (mean ± σ):     10.058 s ±  0.375 s    [User: 183.9 ms, System: 3104.2 ms]
   Range (min … max):    9.562 s … 10.570 s    10 runs
 
@@ -83,9 +84,10 @@ Summary
 | `./diskus --threads 64 /mnt/r/test` | 4.552 ± 0.141 | 4.305 | 4.732 | 1.42 ± 0.04 |
 
 ### Windows 10 (x64):
-```
+```bash
 PS> .\hyperfine -L exe "du64.exe -nobanner",rdu-async-par.exe,du-rs.exe,"du-cs.exe -t 64",du-go.exe,"diskus.exe --threads 64" "{exe} r:\test"
 Benchmark #1: du64.exe -nobanner r:\test
+
   Time (mean ± σ):     703.1 ms ±   5.3 ms    [User: 1.4 ms, System: 6.2 ms]
   Range (min … max):   692.4 ms … 709.2 ms    10 runs
 
